@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1535827228 source:c:\users\public\documents\cesar\src\func.cpp
+	"Func.h"
+
+1535827352 c:\users\public\documents\cesar\include\func.h
+	<string>
+	<iostream>
+
+1535827363 source:c:\users\public\documents\cesar\main.cpp
+	"Cesar.h"
+
+1535827573 c:\users\public\documents\cesar\include\cesar.h
+	"Func.h"
+
