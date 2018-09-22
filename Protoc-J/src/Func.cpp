@@ -27,7 +27,7 @@ int euclides_extendido(int a,int b)
     int r1 = a, r2 = b;
     int x1 = 1, x2 = 0;
 
-    int q , r , x , y;
+    int q , r , x;
 
     while(r2>0){
         q = r1/r2;
@@ -55,12 +55,12 @@ int inversa(int a, int b)
     }
 }
 int generar_Aleatorio(){
-    srand(time(NULL));
-    int numero_aleatorio=rand();  ///Numeros entre 1-1000
+
+    int numero_aleatorio=10+(modulo(rand(),21));  ///Numeros entre 1-1000
     return numero_aleatorio;
 }
 int generar_Aleatorio_Max(int max){
-    srand(time(NULL));
+
     int numero_aleatorio=rand()%(max);  ///Numeros entre 1-1000
     return numero_aleatorio;
 }

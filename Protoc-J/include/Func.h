@@ -17,7 +17,6 @@ int euclides(int, int);
 int euclides_extendido(int,int);
 int inversa(int,int);
 int generar_Aleatorio();
-int generar_Aleatorio_Max(int);
 void generar_claves_affin(int&,int&,int);
 
 #endif // FUNC_H

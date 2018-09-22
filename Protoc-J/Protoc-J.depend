@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1537632674 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\main.cpp
+1537634890 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\main.cpp
 	<iostream>
 	"Protocolo.h"
 
@@ -9,7 +9,7 @@
 1537631646 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\affin.h
 	"Func.h"
 
-1537592631 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\func.h
+1537635314 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\func.h
 	<iostream>
 	<string.h>
 	<time.h>
@@ -17,7 +17,7 @@
 	<fstream>
 	<sstream>
 
-1537589158 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\src\func.cpp
+1537635464 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\src\func.cpp
 	"../include/Func.h"
 
 1537592678 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\src\cesar.cpp
@@ -26,16 +26,16 @@
 1537592631 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\cesar.h
 	"Func.h"
 
-1537592678 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\src\enigma.cpp
-	"../include/Enigma.h"
+1537635768 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\src\enigma.cpp
+	"Enigma.h"
 
-1537592631 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\enigma.h
+1537599974 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\enigma.h
 	"Func.h"
 
-1537633505 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\src\protocolo.cpp
+1537635847 source:d:\instaladores\programacion\nueva carpeta (3)\protoc-j\src\protocolo.cpp
 	"Protocolo.h"
 
-1537632244 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\protocolo.h
+1537635806 d:\instaladores\programacion\nueva carpeta (3)\protoc-j\include\protocolo.h
 	"Cesar.h"
 	"Enigma.h"
 	"Affin.h"

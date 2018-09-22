@@ -11,7 +11,7 @@ Protocolo::Protocolo(string cod_alumno1,string nombr_iniciales,string apell_inic
     e2=nombr_iniciales;
     e3=apell_iniciales;
     e4=steckers_apell;
-    alea_cesar = 10+generar_Aleatorio_Max(tam);
+    alea_cesar = generar_Aleatorio();
 }
 string Protocolo::leer_txt()
 {
@@ -55,22 +55,18 @@ string Protocolo::Encriptado(string mensaje_original)
 
     Enigma enigma(temp2.substr(0,3),a,b,c,temp2.substr(3,3),temp2.substr(6,2));
     enigma_temp1 = temp2.substr(8,100);
-    enigma_temp1=enigma.Encriptado(enigma_temp1);
+    string enigma_temp2=enigma.Cifrado(enigma_temp1);
     Affin affin;
     clave_affin_a = affin.get_clave_a();///arreglar claves del affin / revisar si es el constructor del mismo cifrado
     clave_affin_b = affin.get_clave_b();
-    affin_temp1 = affin.Affin_Encriptacion(enigma_temp1);
-    cout<<clave_affin_a<<endl;
-    cout<<clave_affin_b<<endl;
+    affin_temp1 = affin.Affin_Encriptacion(enigma_temp2);
     stringstream a1,a2,c1;
     a1 << clave_affin_a;
     a2 << clave_affin_b;
     c1 << alea_cesar;
 
     mensaje_encriptado+=a1.str();
-    cout<<a1.str()<<endl;
     mensaje_encriptado+=a2.str();
-    cout<<a2.str()<<endl;
     mensaje_encriptado+='\n';
     mensaje_encriptado+=e1;
     mensaje_encriptado+=temp2.substr(0,3);
@@ -119,6 +115,7 @@ string Protocolo::Desencriptado()
 
 	Affin Aff(clave_affin_a,clave_affin_b);
 	string tmp1 = Aff.Affin_Desencriptacion(mensaje);
+	cout<<tmp1<<endl;
 
 	stringstream b1(enigma.substr(0,1));
 	stringstream b2(enigma.substr(1,1));
@@ -130,7 +127,8 @@ string Protocolo::Desencriptado()
 	b2>>rotores2;
 	b3>>rotores3;
 	Enigma Incog(enigma.substr(3,3),rotores1,rotores2,rotores3,enigma.substr(6,3),enigma.substr(9,2));
-	string tmp2 = Incog.Desencriptado(tmp1);
+	string tmp2 = Incog.Descifrado(tmp1);
+	cout<<tmp2<<endl;
 
 	stringstream c1(cesar.substr(0,2));
 	int clave_cesar_a = 0;
