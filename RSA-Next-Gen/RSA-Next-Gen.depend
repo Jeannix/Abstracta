@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1538183401 source:d:\instaladores\programacion\rsa-next-gen\main.cpp
+	"RSA.h"
+
+1538183412 d:\instaladores\programacion\rsa-next-gen\include\rsa.h
+	<NTL/ZZ.h>
+	<sstream>
+	<string>
+	<iostream>
+
